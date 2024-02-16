@@ -9,25 +9,31 @@
 <body class="container">
     <h1>Caixas de mensagens interativas </h1>
 
+    <!-- POPOVER -->
     <button type="button" class="btn btn-md btn-primary" 
     data-bs-toggle="popover" 
     data-bs-title="Título do popover" 
     data-bs-content="Aqui é o conteúdo de texto que será exibido no popover."
     data-bs-placement="bottom">Abrir/Fecher popover</button>
 
+    <!-- TOOLTIP -->
     <button type="button" class="btn btn-info" 
     data-bs-toggle="tooltip" 
     data-bs-placement="top" 
     data-bs-title="Tooltip on top">Tooltip on top</button>
 
 
+
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- POPOVER -->
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
 
+    <!-- TOOLTIP -->
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
